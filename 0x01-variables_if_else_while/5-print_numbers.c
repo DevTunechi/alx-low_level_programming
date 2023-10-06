@@ -9,6 +9,6 @@ int main(void)
 {
 int z;
 for (z = 0; z <= 9; z++)
-printf("%d\n", z);
+printf("%d", z);
 return (0);
 }
