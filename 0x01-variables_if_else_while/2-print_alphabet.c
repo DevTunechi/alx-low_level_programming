@@ -7,14 +7,14 @@
 
 int main(void)
 {
-char lowercase, uppercase;
-for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+char a;
+for (a = 'a'; a <= 'z'; a++)
 {
-putchar(lowercase);
+putchar(a);
 }
-for (lowercase = 'A'; uppercase <= 'Z'; uppercase++)
+for (a = 'A'; a <= 'Z'; a++)
 {
-putchar(uppercase);
+putchar(a);
 }
 putchar('\n');
 return (0);
