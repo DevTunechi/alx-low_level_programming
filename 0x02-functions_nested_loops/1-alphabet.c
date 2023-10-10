@@ -1,27 +1,17 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
- * main - Check the code
- *
- * letter: Starts from lowercase a-z
- *
+ * print_alphabet - this is the fucntion that prints alphabets
  * Return: Always 0.
  */
 
 void print_alphabet(void)
-
-/**
- * print_alphabet- prints letters in lovwercase
- */
-
 {
 char letter = 'a';
-while (letter <= 'z')
+for (letter = 'a'; letter <= 'z'; letter++)
 {
 _putchar(letter);
-letter++;
 }
-_putchar('\n');
-
+_putchar(',');
 }
