@@ -8,8 +8,8 @@
 int main(void)
 
 {
-int i = 0;
-long j = 1, k = 2, sum = k;
+int i = i;
+long j = 1, k = 2, sum = 2;
 
 while (k + j < 4000000)
 {
