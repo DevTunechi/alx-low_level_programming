@@ -19,8 +19,6 @@ sum += k;
 j = k - j;
 ++i;
 }
-printf("%ld", sum);
-printf("(8 chars long)\n"):
-fprint(stderr, "[Anything]\n");
+printf("%ld ", sum);
 return (0);
 }
