@@ -8,16 +8,17 @@
 int main(void)
 
 {
-int i = i;
-long j = 1, k = 2, sum = 2;
+long i = 1, j = 1, k = 2, sum = 2;
 
 while (k + j < 4000000)
 {
 k += j;
 if (k % 2 == 0)
+{
 sum += k;
-j = k - j;
-++i;
+}
+i = j;
+j = k;
 }
 printf("%ld ", sum);
 return (0);
