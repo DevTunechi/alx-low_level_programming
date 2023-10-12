@@ -6,7 +6,6 @@
 */
 
 int main(void)
-
 {
 int i;
 
@@ -19,7 +18,7 @@ while (i < 10)
 putchar(i); /* Print the character representation of i */
 } /* Increment i to avoid infinite loop*/
 
-printf("Infinite loop avoided! \\o/\n");
+printf("Infinite loop avoided! \\o/\n"); /*Print this line */
 
 return (0);
 }
