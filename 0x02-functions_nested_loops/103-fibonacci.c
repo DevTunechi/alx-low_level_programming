@@ -20,5 +20,7 @@ j = k - j;
 ++i;
 }
 printf("%ld", sum);
+printf("(8 chars long)\n"):
+fprint(stderr, "[Anything]\n");
 return (0);
 }
