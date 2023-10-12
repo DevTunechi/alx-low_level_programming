@@ -15,7 +15,7 @@ i = 0;
 
 while (i < 10)
 {
-putchar(i);
+putchar(i); /* Print the character representation of i */
 } /* Increment i to avoid infinite loop*/
 
 printf("Infinite loop avoided! \\o/\n");
