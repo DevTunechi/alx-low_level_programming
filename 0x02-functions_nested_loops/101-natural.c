@@ -9,39 +9,29 @@
 int main(void)
 
 {
-int i = 0;
-long j = 1, k = 2;
+long j = 1, k = 2, temp;
 bool found = false;
 
-while (i < 52)
+while (k != 244293)
 {
-if (i == 0)
-printf("%ld", j);
-else if (i == 1)
-printf(", %ld", k);
-else
-{
-k += j;
-j = k - j;
-printf(", %ld", k);
-}
+temp = k;
+k = k + j;
+j = temp;
 
-if (k == 244293)
+if (k > 244293)
 {
-found = true;
+found = false;
 break;
 }
-
-++i;
 }
 
 if (found)
 {
-printf("\n(7 chars long)\n");
+printf("%ld\n(7 chars long)\n", k);
 }
 else
 {
-fprintf(stderr, "[Anything]\n");
+fprintf(stderr, "[Anything]\n(0 chars long)\n");
 }
 
 return (0);
