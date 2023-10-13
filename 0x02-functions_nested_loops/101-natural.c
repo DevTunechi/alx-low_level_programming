@@ -25,7 +25,7 @@ break;
 }
 }
 
-if (found)
+if (k == 244293)
 {
 printf("%ld\n(7 chars long)\n", k);
 }
