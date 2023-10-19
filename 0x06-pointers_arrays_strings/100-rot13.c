@@ -1,32 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * rot13 - Encodes a string using ROT13 cipher
- * @str: The input string
- *
- * Description: Encodes the input string using the ROT13 algorithm, where
- * each letter is replaced by the letter 13 positions down the alphabet
- * Non-alphabetic characters remain unchanged
- *
- * Return: A pointer to the modified string
+ * rot13 - The function name
+ * @s: The parameter
+ * Return: String function
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-char *ptr = str;
+	int a, f;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-while (*ptr != '\0')
-{
-char is_alpha = (*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= 'a' && *ptr <= 'z');
-
-if (is_alpha)
-{
-char is_uppercase = (*ptr >= 'A' && *ptr <= 'Z');
-char base = is_uppercase ? 'A' : 'a';
-*ptr = ((*ptr - base + 13) % 26) + base;
-}
-
-ptr++;
-}
-return (str);
+	for (a = 0; s[a] != '\0'; a++)
+	{
+	for (f = 0; f < 52; f++)
+	{
+	if (s[a] == data1[f])
+	{
+	s[a] = datarot[f];
+	break;
+	}
+	}
+	}
+	return (s);
 }
