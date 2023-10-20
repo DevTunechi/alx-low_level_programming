@@ -2,49 +2,51 @@
 #include <stdio.h>
 
 /**
- * print_buffer - Prints the content of a buffer.
- * @b: The buffer to print.
- * @size: The size of the buffer.
+ * print_buffer - The function name
+ * @b: The buffer.
+ * @size: Size of buffer
+ * Return: 0
  */
 
 void print_buffer(char *b, int size)
+{
+	int x;
+	int y;
+	int z;
 
-{
-int i, j;
+	x = 0;
 
-if (size <= 0)
-{
-printf("\n");
-return;
-}
-for (i = 0; i < size; i += 10)
-{
-printf("%08x: ", i);
-for (j = 0; j < 10; j++)
-{
-if (i + j < size)
-printf("%02x", b[i + j]);
-else
-printf("  ");
-if (j % 2 == 1)
-printf(" ");
-}
-printf(" ");
-for (j = 0; j < 10; j++)
-{
-if (i + j < size)
-{
-char c = b[i + j];
-if (c >= 32 && c <= 126)
-printf("%c", c);
-else
-printf(".");
-}
-else
-{
-printf(" ");
-}
-}
-printf("\n");
+	if (size <= 0)
+	{
+	printf("\n");
+	return;
+	}
+	while (x < size)
+	{
+	y = size - x < 10 ? size - x : 10;
+	printf("%08x: ", x);
+	for (z = 0; z < 10; z++)
+	{
+	if (z < y)
+	printf("%02x", *(b + x + z));
+	else
+	printf("  ");
+	if (z % 2)
+	{
+	printf(" ");
+	}
+	}
+	for (z = 0; z < y; z++)
+	{
+	int c = *(b + x + z);
+
+	if (c < 32 || c > 132)
+	{
+	c = '.';
+	}
+	printf("%c", c);
+	}
+	printf("\n");
+	x += 10;
 }
 }
