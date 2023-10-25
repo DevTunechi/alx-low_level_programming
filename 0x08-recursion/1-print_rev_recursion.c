@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
+ * _print_rev_recursion - Prints a string in reverse recursively.
  * _putchar - Writes a character to the standard output.
- * @c: The character to be written.
+ * @s: The input string.
  */
 
 void _print_rev_recursion(char *s)
