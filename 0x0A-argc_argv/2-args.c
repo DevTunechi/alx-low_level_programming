@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * @argc: Number of arguments given to the program
+ * @argc: Number of arguments
  * @argv: The arguement
  * Return: 0
  */
