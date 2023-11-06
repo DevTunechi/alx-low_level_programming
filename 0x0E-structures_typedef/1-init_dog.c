@@ -9,8 +9,8 @@
  * @age: The dog's age
  * @owner: Pointer to string representing dog owner's name
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
 
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d != NULL)
 {
