@@ -3,7 +3,6 @@
 
 #include <unistd.h>
 #include <stddef.h>
-#include <stdio.h>
 
 /**
  * struct list_s - singly linked list
