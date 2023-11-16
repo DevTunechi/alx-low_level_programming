@@ -41,8 +41,7 @@ char len_str[11];
 size_t len_str_len = 0;
 unsigned int len_copy = h->len;
 
-do
-{
+do {
 len_str[len_str_len++] = len_copy % 10 + '0';
 len_copy /= 10;
 } while (len_copy > 0);
@@ -66,5 +65,5 @@ h = h->next;
 count++;
 }
 
-return count;
+return (count);
 }
