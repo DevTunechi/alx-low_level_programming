@@ -1,13 +1,17 @@
 section .data
-	hello db 'Hello, Holberton', 0
+	hello db 'Hello, Holberton', 0xA ; 0xA is the newline character
+	format db '%s', 0 ; Format string for printf
 
 section .text
 	global main
-	extern printf
+	extern printf, fflush
 
 main:
-	push rdi ; Preserve the value of rdi
-	lea rdi, [hello] ; Load the address of the hello string into rdi
+	sub rsp, 8 ; Align the stack
+	mov rdi, format ; Set rdi to point to the format string
+	mov rsi, hello ; Set rsi to point to the hello string
 	call printf ; Call the printf function
-	pop rdi ; Restore the value of rdi
-	ret ; Return from the program, \n
+
+	add rsp, 8 ; Restor the stack
+	call fflush ; Flush the output buffer
+	ret ; Return from the program
