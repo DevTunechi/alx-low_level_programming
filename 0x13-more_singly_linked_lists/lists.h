@@ -12,7 +12,7 @@
  * @n: integer
  * @next: points to the next node
  */
-typedef struct Node
+typedef struct listint_s
 {
 int n;
 struct listint_s *next;
