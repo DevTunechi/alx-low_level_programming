@@ -7,8 +7,9 @@
 #include <string.h>
 
 /**
- * struct Node - singly linked list node
+ * struct listint_s - singly linked list node
  * struct listint_s - singly linked list
+ * typedef struct listint_s - Prints all the elements of a listint_t list
  * @n: integer
  * @next: points to the next node
  */
