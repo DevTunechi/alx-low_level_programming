@@ -1,5 +1,13 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
+
+/**
+ * main - entry point
+ * check_password: Finds the string of characters (password)
+ * @argc: The number of command-line arguments.
+ * @argv: An array containing the command-line arguments
+ * Return: 0 on success
+ */
+
 
 int check_password(const char *input)
 {
@@ -20,7 +28,7 @@ if (check_password(argv[1]))
 {
 printf("Congratulations!\n");
 }
-else 
+else
 {
 printf("Try again!\n");
 }
