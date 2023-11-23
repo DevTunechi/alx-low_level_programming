@@ -7,7 +7,7 @@ int _putchar(char c);
 /**
  * binary_to_uint - Converts a binary number to an unsigned int.
  * @b: A pointer to the binary string.
- * Return: The converted number, or 0 if there is an invalid character in the string.
+ * Return: converted num, or 0 if there is invalid character in string.
  */
 
 unsigned int binary_to_uint(const char *b)
