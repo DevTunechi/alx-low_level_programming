@@ -1,13 +1,15 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+#define BUFFER_SIZE 1024
 
 /**
  * main - Entry point of the program.
+ * @program_name: Name of the program
  * Return: Exit status.
- */
-
-/**
- * display_usage - Displays the correct usage of the program
- * @program_name: The name of the program
  */
 
 void display_usage(char *program_name);
@@ -106,7 +108,7 @@ handle_error("Error: Can't read from file", "", source_fd, dest_fd);
 }
 
 /**
- * handle_error - Handles errors, displays an error message, and exits the program.
+ * handle_error - Handles errors, displays error message,exits program.
  * @message: The error message.
  * @filename: The relevant filename.
  * @source_fd: File descriptor of the source file.
