@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-  * main - entry point
-  * Return - 0
-  **/
-
-int main() {
+ * print_holberton - print the logo of Holberton
+ * Return: Nothing
+ */
+void print_holberton(void)
+{
 	printf("j#0000000000000000000000000000000000000\n");
 	printf("j#000000000000000000@Q**g00000000000000\n");
 	printf("j#0000000000000000*]++]4000000000000000\n");
@@ -31,5 +31,4 @@ int main() {
 	printf("j#0000000000000k?qwgdC=]4#0000000000000\n");
 	printf("j#00000000000000w]+]++qw#00000000000000\n");
 	printf("\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
-	return 0;
 }
